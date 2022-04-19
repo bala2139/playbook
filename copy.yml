@@ -1,0 +1,6 @@
+---
+- hosts: master
+  tasks:
+  become: yes
+  - name: copy
+    copy: src=/var/log/messages dest=/tmp/ 

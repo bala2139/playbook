@@ -3,3 +3,4 @@
   tasks: 
   - name: package
     package: name=httpd state=latest 
+    service: name=httpd state=started

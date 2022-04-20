@@ -1,0 +1,7 @@
+---
+- host:master
+  become: yes
+  - tasks:
+  - name: install git
+    Package: name=git state=present
+    service: name=git state=started      
